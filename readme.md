@@ -5,6 +5,11 @@ Switcheroo is for anyone who spends more time using a keyboard than a mouse.
 Instead of alt-tabbing through a (long) list of open windows, Switcheroo allows
 you to quickly switch to any window by typing in just a few characters of its title.
 
+
+**This version if just modify for myself. Using alt+` to show up , ` to select next , and release alt to select.**
+
+**Just using in a VM to avoid conflick with system's alt+tab.**
+
 ## Screenshot
 
 <img src="screenshot.png" alt="Screenshot of Switcheroo in action" width="540px" height="372px">
@@ -23,12 +28,13 @@ Usage
 
 Action                         | Shortcut        | Remarks
 ------------------------------ | --------------- | ----------
-Activate Switcheroo            | `Alt + Space`   | This shortcut can be customized in _Options_
-Activate Switcheroo            | `Alt + Tab`     | Only works if enabled under _Options_
+Activate Switcheroo            | Alt + `(backtick)   | This shortcut can be customized in _Options_
+Activate Switcheroo            | Alt + Tab   | Only works if enabled under _Options_
 _When Switcheroo is open_      |                 |
-Switch to selected window      | `Enter`         |
-Close selected window          | `Ctrl + W`      |
-Dismiss Switcheroo             | `Esc`           |
+Select Next          | Alt + `(backtick)      |
+Select Prev          | Alt + Shift + `(backtick)      |
+Switch to selected window      | release Alt        |
+Dismiss Switcheroo             | release Alt          |
 
 
 
