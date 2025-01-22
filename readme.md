@@ -6,7 +6,7 @@ Instead of alt-tabbing through a (long) list of open windows, Switcheroo allows
 you to quickly switch to any window by typing in just a few characters of its title.
 
 
-**This version if just modify for myself. Using alt+` to show up , ` to select next , and release alt to select.**
+**This version if just modify for myself. Using alt+\` to show up , \` to select next , and release alt to select.**
 
 **Just using in a VM to avoid conflick with system's alt+tab.**
 
