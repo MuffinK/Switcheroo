@@ -126,7 +126,7 @@ namespace Switcheroo
                 {
                     Switch();
                 }
-                else if (args.Key == Key.LeftAlt && _altTabAutoSwitch)
+                else if (args.Key == Key.LeftAlt)
                 {
                     Switch();
                 }
@@ -456,7 +456,8 @@ namespace Switcheroo
             }
             else
             {
-                HideWindow();
+                //HideWindow();
+                NextItem();
             }
         }
 

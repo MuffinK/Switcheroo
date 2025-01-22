@@ -23,8 +23,8 @@
     <Window.InputBindings>
         <KeyBinding Command="local:MainWindow.CloseWindowCommand" Key="W" Modifiers="Ctrl" />
         <KeyBinding Command="local:MainWindow.CloseWindowCommand" Key="X" Modifiers="Alt" />
-        <KeyBinding Command="local:MainWindow.ScrollListUpCommand" Key="Up" />
-        <KeyBinding Command="local:MainWindow.ScrollListDownCommand" Key="Down" />
+        <KeyBinding Command="local:MainWindow.ScrollListUpCommand" Key="Oem3" Modifiers="Alt+Shift" />
+        <KeyBinding Command="local:MainWindow.ScrollListDownCommand" Key="Oem3" Modifiers="Alt" />
         <KeyBinding Command="local:MainWindow.ScrollListUpCommand" Key="K" Modifiers="Alt" />
         <KeyBinding Command="local:MainWindow.ScrollListDownCommand" Key="J" Modifiers="Alt" />
     </Window.InputBindings>
@@ -68,8 +68,12 @@
                 </StackPanel>
             </DockPanel>
             <Grid DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="219*"/>
+                    <ColumnDefinition Width="47*"/>
+                </Grid.ColumnDefinitions>
                 <TextBox Name="tb" Padding="5" VerticalAlignment="Top" TextChanged="TextChanged" FontSize="15"
-                         VerticalContentAlignment="Center">
+                         VerticalContentAlignment="Center" Grid.ColumnSpan="2">
                     <TextBox.InputBindings>
                         <!-- For now, leave these here.  Would it be better to route them upward? -->
                         <KeyBinding Command="local:MainWindow.ScrollListUpCommand" Key="Up" />
@@ -78,11 +82,11 @@
                         <KeyBinding Command="local:MainWindow.ScrollListDownCommand" Key="Tab" />
                     </TextBox.InputBindings>
                 </TextBox>
-                <TextBlock Margin="0,0,10,0" Width="15" HorizontalAlignment="Right" TextAlignment="Center"
+                <TextBlock Margin="0,4,10,4" Width="15" HorizontalAlignment="Right" TextAlignment="Center"
                            VerticalAlignment="Center"
                            FontSize="18" FontWeight="Bold" Opacity="0.4"
                            PreviewMouseDown="ShowHelpTextBlock_OnPreviewMouseDown"
-                           Name="ShowHelpTextBlock" Cursor="Hand" Foreground="DarkGray">
+                           Name="ShowHelpTextBlock" Cursor="Hand" Foreground="DarkGray" Grid.Column="1">
                     <TextBlock.Text>?</TextBlock.Text>
                     <TextBlock.Triggers>
                         <EventTrigger RoutedEvent="MouseEnter">
